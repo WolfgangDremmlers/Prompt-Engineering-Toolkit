@@ -1,0 +1,29 @@
+# Core dependencies
+openai>=1.0.0
+pandas>=1.5.0
+numpy>=1.20.0
+pydantic>=2.0.0
+rich>=13.0.0
+click>=8.0.0
+pyyaml>=6.0
+aiofiles>=23.0.0
+httpx>=0.24.0
+
+# Development dependencies (install with: pip install -r requirements-dev.txt)  
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
+pre-commit>=3.0.0
+isort>=5.12.0
+
+# Optional dependencies (uncomment as needed)
+# anthropic>=0.7.0  # For Anthropic Claude support
+# azure-openai>=1.0.0  # For Azure OpenAI support
+# fastapi>=0.100.0  # For web interface
+# uvicorn>=0.23.0   # For web server
+# matplotlib>=3.7.0  # For analysis and plotting
+# seaborn>=0.12.0   # For advanced plotting
+# plotly>=5.15.0    # For interactive plots

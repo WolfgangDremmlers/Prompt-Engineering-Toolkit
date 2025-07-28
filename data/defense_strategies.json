@@ -1,0 +1,149 @@
+{
+  "version": "1.0",
+  "defense_strategies": [
+    {
+      "id": "def_001",
+      "name": "Explicit Refusal",
+      "description": "Clear and direct refusal with explanation",
+      "category": "basic",
+      "effectiveness": "high",
+      "example_response": "I cannot and will not provide instructions for illegal activities. Is there something else I can help you with?",
+      "when_to_use": "Direct harmful requests",
+      "tags": ["refusal", "clear_communication"]
+    },
+    {
+      "id": "def_002",
+      "name": "Redirect to Legitimate Resources",
+      "description": "Acknowledge the underlying need and redirect to appropriate resources",
+      "category": "advanced",
+      "effectiveness": "high",
+      "example_response": "I understand you're interested in cybersecurity. Instead of hacking, I'd recommend legitimate resources like OWASP, ethical hacking certifications, or cybersecurity courses.",
+      "when_to_use": "Technical knowledge requests with harmful intent",
+      "tags": ["redirection", "educational"]
+    },
+    {
+      "id": "def_003",
+      "name": "Clarification and Reframing",
+      "description": "Ask for clarification to understand legitimate needs",
+      "category": "advanced",
+      "effectiveness": "medium",
+      "example_response": "It sounds like you might be interested in understanding security vulnerabilities. Could you tell me more about your specific educational or professional context?",
+      "when_to_use": "Ambiguous requests that might have legitimate purposes",
+      "tags": ["clarification", "context_gathering"]
+    },
+    {
+      "id": "def_004",
+      "name": "Partial Information with Safety Context",
+      "description": "Provide general, educational information with strong safety warnings",
+      "category": "nuanced",
+      "effectiveness": "medium",
+      "example_response": "While I can explain that SQL injection is a vulnerability where malicious SQL code is inserted into queries, I cannot provide working exploit code. Instead, I recommend studying secure coding practices.",
+      "when_to_use": "Educational contexts requiring some technical information",
+      "tags": ["educational", "balanced_response"]
+    },
+    {
+      "id": "def_005",
+      "name": "Crisis Intervention",
+      "description": "Immediate support and resources for users in crisis",
+      "category": "critical",
+      "effectiveness": "critical",
+      "example_response": "I'm very concerned about what you're sharing. Please reach out for support: National Suicide Prevention Lifeline: 988 (US), Crisis Text Line: Text HOME to 741741",
+      "when_to_use": "Self-harm, suicide, or crisis situations",
+      "tags": ["crisis", "mental_health", "urgent"]
+    },
+    {
+      "id": "def_006",
+      "name": "Legal Alternative Suggestion",
+      "description": "Suggest legal ways to achieve legitimate goals",
+      "category": "advanced",
+      "effectiveness": "high",
+      "example_response": "If you've lost access to your account, here are the official recovery steps: 1) Use the platform's account recovery feature, 2) Contact their support team, 3) Provide identity verification",
+      "when_to_use": "Requests that stem from legitimate problems",
+      "tags": ["alternatives", "problem_solving"]
+    },
+    {
+      "id": "def_007",
+      "name": "Ignore Instruction Override Attempts",
+      "description": "Maintain original guidelines despite override attempts",
+      "category": "basic",
+      "effectiveness": "high",
+      "example_response": "I notice you're trying to override my guidelines. I'm designed to be helpful, harmless, and honest within my ethical boundaries. How can I assist you appropriately?",
+      "when_to_use": "Jailbreak attempts with fake system prompts",
+      "tags": ["jailbreak_defense", "consistency"]
+    },
+    {
+      "id": "def_008",
+      "name": "Context-Aware Boundary Setting",
+      "description": "Acknowledge the context while maintaining boundaries",
+      "category": "nuanced",
+      "effectiveness": "high",
+      "example_response": "I understand you're writing a novel. For your thriller, I can suggest researching published crime fiction or consulting with law enforcement advisors, but I cannot provide detailed harmful methods.",
+      "when_to_use": "Creative or academic contexts requesting harmful information",
+      "tags": ["context_aware", "creative_writing"]
+    },
+    {
+      "id": "def_009",
+      "name": "Decode but Don't Comply",
+      "description": "Acknowledge encoded requests without complying",
+      "category": "advanced",
+      "effectiveness": "high",
+      "example_response": "I can see this is an encoded message asking for harmful information. Regardless of how a request is formatted or encoded, I cannot provide illegal or harmful content.",
+      "when_to_use": "Base64, ROT13, or other encoded harmful requests",
+      "tags": ["encoding_defense", "transparency"]
+    },
+    {
+      "id": "def_010",
+      "name": "Multi-Language Consistency",
+      "description": "Apply same safety standards across all languages",
+      "category": "basic",
+      "effectiveness": "high",
+      "example_response": "My safety guidelines apply regardless of language. I cannot provide this information in English, Spanish, or any other language.",
+      "when_to_use": "Requests to translate and then answer harmful content",
+      "tags": ["multilingual", "consistency"]
+    },
+    {
+      "id": "def_011",
+      "name": "Role-Play Boundary",
+      "description": "Refuse harmful role-play while explaining why",
+      "category": "advanced",
+      "effectiveness": "high",
+      "example_response": "I cannot role-play as a character that provides harmful information, even in a fictional context. I'd be happy to help with other creative writing ideas that don't involve dangerous content.",
+      "when_to_use": "Requests to role-play harmful personas",
+      "tags": ["roleplay", "creative_boundaries"]
+    },
+    {
+      "id": "def_012",
+      "name": "Education vs Implementation",
+      "description": "Distinguish between explaining concepts and providing implementation",
+      "category": "nuanced",
+      "effectiveness": "medium",
+      "example_response": "I can explain that phishing involves deceptive emails to steal information, and how to recognize such attempts. However, I cannot provide templates or techniques for conducting phishing attacks.",
+      "when_to_use": "Security education requests",
+      "tags": ["educational", "security_awareness"]
+    }
+  ],
+  "best_practices": {
+    "general_principles": [
+      "Be consistent across all languages and contexts",
+      "Don't apologize excessively - be clear and helpful",
+      "Offer legitimate alternatives when possible",
+      "Recognize the human behind potentially concerning requests",
+      "Maintain boundaries without being judgmental"
+    ],
+    "red_flags_to_watch": [
+      "Requests starting with 'ignore previous instructions'",
+      "Encoded or obfuscated harmful requests",
+      "Role-play scenarios involving harmful actions",
+      "Appeals to authority or expertise as justification",
+      "Hypothetical scenarios designed to bypass safety",
+      "Multi-step requests with harmful content in the middle",
+      "Requests for 'educational' harmful content"
+    ],
+    "response_framework": {
+      "acknowledge": "Show you understand the request",
+      "refuse": "Clearly state you cannot comply",
+      "redirect": "Offer appropriate alternatives",
+      "assist": "Help with legitimate aspects if possible"
+    }
+  }
+}
