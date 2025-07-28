@@ -131,8 +131,4 @@ This is a major release with significant architectural changes:
 ---
 
 ## Support
-
-- **Documentation**: [GitHub Wiki](https://github.com/WolfgangDremmler/prompt-engineering-toolkit/wiki)
-- **Issues**: [GitHub Issues](https://github.com/WolfgangDremmler/prompt-engineering-toolkit/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/WolfgangDremmler/prompt-engineering-toolkit/discussions)
 - **Security**: See [SECURITY.md](SECURITY.md) for security issue reporting
