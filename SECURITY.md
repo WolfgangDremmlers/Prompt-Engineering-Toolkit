@@ -119,7 +119,6 @@ For security-related questions or concerns:
 - **Response Time**: Within 48 hours
 
 For general questions about security practices:
-- Open a discussion in [GitHub Discussions](https://github.com/WolfgangDremmler/prompt-engineering-toolkit/discussions)
 - Tag your question with "security"
 
 ### Legal
