@@ -206,9 +206,7 @@ MIT License - see LICENSE file
 
 ## 📞 Support
 
-- Issues: GitHub Issues
-- Discussions: GitHub Discussions
-- Email: your-email@example.com
+- Email: dremmlerwolfgang559@gmail.com
 
 ---
 
