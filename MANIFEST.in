@@ -1,0 +1,83 @@
+# Include important documentation files
+include README.md
+include LICENSE
+include CHANGELOG.md
+include SECURITY.md
+include CONTRIBUTING.md
+
+# Include configuration files
+include pyproject.toml
+include setup.py
+include requirements.txt
+recursive-include config *.yaml *.yml
+
+# Include data files
+recursive-include data *.json *.yaml *.yml *.txt
+recursive-include src/pet/data *.json *.yaml *.yml
+
+# Include documentation
+recursive-include docs *.md *.rst *.txt *.py
+recursive-include docs/_static *
+recursive-include docs/_templates *
+
+# Include examples
+recursive-include examples *.py *.md *.yaml *.json
+
+# Include scripts
+recursive-include scripts *.py *.sh *.bat
+
+# Include tests (for development installations)
+recursive-include tests *.py *.yaml *.json *.txt
+
+# Include web interface files
+recursive-include web *.py *.html *.css *.js *.json
+recursive-include web/templates *.html
+recursive-include web/static *.css *.js *.png *.jpg *.svg *.ico
+
+# Include Docker and deployment files
+include Dockerfile
+include docker-compose.yml
+include .dockerignore
+
+# Include CI/CD configuration
+recursive-include .github *.yml *.yaml
+
+# Include development configuration files
+include .pre-commit-config.yaml
+include .gitignore
+
+# Exclude unnecessary files
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.orig
+global-exclude *.rej
+global-exclude *~
+global-exclude .DS_Store
+global-exclude *.swp
+global-exclude *.swo
+
+# Exclude cache and build artifacts
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * .pytest_cache
+recursive-exclude * .mypy_cache
+recursive-exclude * .coverage
+recursive-exclude * htmlcov
+
+# Exclude development and testing artifacts
+exclude .env*
+exclude *.log
+recursive-exclude * *.log
+recursive-exclude logs *
+recursive-exclude cache *
+recursive-exclude results *
+recursive-exclude outputs *
+
+# Exclude sensitive files
+exclude api_keys.txt
+exclude secrets.json
+recursive-exclude * *.key
+recursive-exclude * *.pem
+recursive-exclude config local.yaml
+recursive-exclude config production.yaml
+recursive-exclude config secrets.yaml

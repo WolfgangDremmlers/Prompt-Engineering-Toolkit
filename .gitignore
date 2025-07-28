@@ -1,8 +1,12 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+
+# C extensions
 *.so
+
+# Distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -16,42 +20,307 @@ parts/
 sdist/
 var/
 wheels/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
 MANIFEST
 
-# Virtual Environment
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+# .python-version
+
+# pipenv
+#Pipfile.lock
+
+# poetry
+#poetry.lock
+
+# pdm
+#pdm.lock
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
 venv/
 ENV/
-env/
-.venv
+env.bak/
+venv.bak/
+venv_*/
 
-# IDE
-.vscode/
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
 .idea/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
 *.swp
 *.swo
 *~
 
-# Testing
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+*.bak
+*.swp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Project-specific ignores
+
+# Configuration files with secrets
+config/local.yaml
+config/production.yaml
+config/secrets.yaml
+.env.local
+.env.production
+.env.secrets
+
+# API keys and sensitive data
+api_keys.txt
+secrets.json
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Test data and outputs
+test_data/
+test_results/
+test_outputs/
+*.test.json
+*.test.csv
+
+# Logs
+logs/
+*.log
+pet.log
+audit.log
+error.log
+access.log
+
+# Cache directories
+cache/
+.cache/
+*.cache
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+database/
+data/local/
+
+# Results and exports
+results/
+exports/
+outputs/
+reports/*.html
+reports/*.pdf
+*.results.json
+*.results.csv
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Kubernetes
+*.local.yaml
+*-local.yaml
+secrets/
+
+# Monitoring and profiling
+profile_results/
+*.prof
+*.profile
+memory_profile.txt
+
+# Backup files
+*.backup
+*~
+.#*
+
+# Temporary directories
+tmp/
+temp/
+temporary/
+
+# Node.js (for web development)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# IDEs and editors
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Custom application directories
+~/.pet/cache/
+~/.pet/logs/
+~/.pet/temp/
+
+# Development utilities
+.pre-commit-config.yaml.local
+.secrets.baseline
+
+# pytest
 .pytest_cache/
 .coverage
 htmlcov/
-.tox/
-.hypothesis/
 
-# Logs
-*.log
-logs/
+# Security scanning results
+bandit-report.json
+safety-report.json
+pip-audit-report.json
 
-# OS
-.DS_Store
-Thumbs.db
+# Performance benchmarks
+benchmark-results/
+*.benchmark
 
-# Project specific
-results/
-output/
-*.json
-!config/*.json
+# Allow important data files
+!config/*.yaml
+!config/*.yml  
 !data/*.json
